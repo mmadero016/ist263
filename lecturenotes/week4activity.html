@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="utf-8">
+     <title>Scholarship Form</title>
+     <style>
+        td,th{border: 1px solid black}
+    </style>
+    </head>
+    <body>
+        <h1>Scholarship Form</h1>
+        <table>
+            <caption>Quick glance at our scholarships:</caption>
+            <tr>
+                <th>Name of Scholarship</th> 
+                <th>Amount</th>
+                <th>Award Date</th>
+            </tr>
+            <tr>
+                <td>Memorial</td> 
+                <td>$10,000</td>
+                <td>5/1/2024</td>
+            </tr>
+            <tr>
+                <td>Smith Scholarship</td>
+                <td>$100,000</td>
+                <td>3/1/2024</td>
+            </tr>
+        </table> <br>
+        <form action="" method="post">
+            <label for="fullname">Full name:</label>
+            <input type="text" id="fullname" name="Full Name"> <br>
+            <input type="radio" id="sophomoreyear" name="freshsoph" value="Sophomore">
+            <label for="year">Sophomore</label><br>
+            <input type="radio" id="junioryear" name="freshsoph" value="Junior">
+            <label for="year">Junior</label><br>
+            <input type="radio" id="senioryear" name="freshsoph" value="Senior">
+            <label for="year">Senior</label><br>
+            <input type="submit" value="Send Form">
+        </form>
+    </body>
+</html>
