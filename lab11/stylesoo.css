@@ -64,12 +64,12 @@ h1 {
 h1 {text-align: center;}
 
 nav {
-    background-color: #8ab7ff;
+    background-color: #97befd;
     padding: 10px;
     border-radius: 10px;
     }
 
-nav a {color: #760101;}
+nav a {color: #dc0000;}
 
 nav a:hover {background-color: #48b45d;}
 
