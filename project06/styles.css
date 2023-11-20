@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@1&family=DM+Sans:opsz,wght@9..40,100;9..40,200&family=Libre+Franklin:wght@100&family=Oxygen&family=Playpen+Sans:wght@800&display=swap');
+
+.test { 
+    float: right; 
+    margin: 0px 20px 20px 0px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.skip {
+    background-color: #90f462;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute; 
+    top: 10px;
+    left: -999px;
+}
+
+.skip:focus {
+    left: 10px; 
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 30px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: small;
+}
+
+nav {
+    display: flex;
+    text-align: justify;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-right: 20px;
+    color:black;
+}
+
+nav .icon {
+    margin-left: auto;
+}
+
+body {
+    background-color: #797878;
+    margin: 0;
+    padding: 0;
+}
+
+.test {max-width: 100%;}
+
+h1 {
+    text-align: center;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 4em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #ef0d7e;
+    color: #ffffff
+}
+
+div {
+    text-align: wrap;
+    padding: 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 10px;
+    overflow: hidden; 
+}
+
+iframe {
+    display: flex;
+    margin: 70px;
+}
+
+p:last-child {
+    text-align: right;
+    margin-right: 20px
+}
+
+.pancake, .woof {
+    max-width: calc(50% - 20px); 
+    margin: 10px;
+    box-sizing: border-box; 
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: 'DM Sans', sans-serif;
+    color: #ffffff;
+    font-size: larger;
+    padding: 15px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-divider {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer p {
+    margin-top: 20px; 
+    font-size: 10px;
+    opacity: 0.8; 
+    text-align: right;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: small;
+}
+
+a:hover {
+    text-decoration: underline;
+}
