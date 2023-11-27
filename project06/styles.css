@@ -2,10 +2,9 @@
 
 .test { 
     float: right; 
-    margin: 0px 20px 20px 0px;
+    margin: 20px;
     max-width: 100%;
     display: block;
-    margin: 0 auto;
 }
 
 .skip {
@@ -27,6 +26,7 @@ body.no-scroll {
 }
 
 header {
+    width: 100%;
     background-color: #ffffff;
     padding: 30px;
     font-family: 'Libre Franklin', sans-serif;
@@ -58,12 +58,12 @@ body {
     padding: 0;
 }
 
-.test {max-width: 100%;}
+
 
 h1 {
     text-align: center;
     font-family: 'Playpen Sans', cursive;
-    font-size: 4em;
+    font-size: 4.5em;
     margin-bottom: 15px;
     text-shadow: 2px 2px 4px #ef0d7e;
     color: #ffffff
@@ -78,13 +78,14 @@ div {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
-    margin: 10px;
+    margin: 10px 0;
     overflow: hidden; 
 }
 
 iframe {
+    max-width: 100%;
+    margin: 0;
     display: flex;
-    margin: 70px;
 }
 
 p:last-child {
@@ -107,6 +108,8 @@ p {
     padding: 15px;
 }
 footer {
+    width: 100%;
+    clear: both;
     background-color: #333;
     color: white;
     padding: 20px;
@@ -134,4 +137,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 1.2em;
+        background-color: #ffffff;
+        padding: 15px; /* Adjust as needed */
+    }
 }
