@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Nav</title>
+    <!-- 
+        CSS
+        x 1. Large - no hamburger
+        x 2. Small - show hamburger
+        x 3. Large - no x
+        x 4. Small - show x
+        x 5. Large - links are side by side
+        x 6. Small - links are stacked
+
+        JavaScript
+        7. click on hamburger show the links
+        8. click on the x to hide the links
+    -->
+    <style>
+        #hamicon {width: 40px;}
+        #close {cursor: pointer;}
+        .firstrow {display: flex; justify-content: space-between;}
+        @media only screen and (min-width: 800px) {
+            #hamicon, #close {display: none;}
+        }
+        @media only screen and (max-width:799px) {
+            a {
+                display: block;
+                padding: 5px;
+                border: 1px solid #333333;
+            }
+            #navlinks {display: none;}
+        }
+    </style>
+    <script>
+        function showNav () {
+            document.getElementById("navlinks").style.display = "block";
+        }
+        function hideNav () {
+            document.getElementById("navlinks").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="firstrow">
+        <img id="hamicon" src="http://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" onclick="showNav ();">
+        <p id="close" onclick="hideNav ();">X</p>
+    </div>
+    <nav id="navlinks">
+        <a href="index.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</body>
+</html>
