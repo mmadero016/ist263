@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+ <style>
+        h1 {font-family: 'Cookie', cursive;}
+
+        #modal {
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            width: 200px;
+            padding: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -100px -100px;
+            display: none;
+        }
+        #container {
+            position: relative;
+            margin: 0 auto;
+            width: 800px;
+        }
+        a {
+            background-color:#ff597d;
+            padding: 5px;
+        }
+        #modalclose {
+            text-align: right;
+            margin: 0px;
+            color: #ff0000
+        }
+    </style>
+    <script>
+        function subscribe () {
+            document.getElementById("modal").style.display = "block";
+        }
+        function closeModal () {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <h1>Join Subscription List</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo omnis eaque. Illo dicta cupiditate quam? Ut officiis, doloribus maxime consequuntur, dolorem fuga deleniti eaque esse, accusantium suscipit at neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rem illum saepe sunt ipsam obcaecati veritatis error ipsum! Ipsam nesciunt ducimus vero facere consequatur placeat culpa dicta dolore quis at.   
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos velit soluta error libero, ratione nihil nesciunt mollitia cumque unde autem tenetur odio delectus magni corrupti, enim alias repudiandae earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eveniet optio deleniti sint mollitia nemo molestiae impedit tempore, eligendi reiciendis ad nesciunt saepe doloremque illum nobis a corrupti, veritatis praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ullam at eius accusantium est, tempore rem ea quam nobis assumenda recusandae aperiam. Nostrum eligendi dicta laborum aliquam nemo laboriosam beatae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure facere officiis quia odio, et accusantium doloribus voluptate praesentium facilis voluptatibus, iusto harum asperiores quibusdam illo quaerat cumque aperiam exercitationem minima!
+    </p>
+    <p>
+        <a onclick="subscribe();">Subscribe to our newsletter</a>
+    </p>
+    </div>
+    <div id="modal">
+        <p id="modalclose" onclick="closeModal();">X</p>
+        <h1>Join Subscription List</h1>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="'name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input type="submit" class="button" value="Subscribe">
+        </form>
+    </div>
+</body>
+</html>
+</body>
+</html>
